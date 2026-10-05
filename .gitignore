@@ -1,0 +1,6 @@
+settings.config
+
+image-builder/output/
+# Python cache - every __pycache__ folder and compiled file, in any sub-folder
+**/__pycache__/
+*.py[cod]

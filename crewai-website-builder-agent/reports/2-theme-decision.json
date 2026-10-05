@@ -1,0 +1,41 @@
+{
+  "scores": [
+    {
+      "theme_id": "corporate-blue",
+      "score": 7,
+      "reason": "Uses blue which matches colour preference and conveys trustworthiness; professional look fits working professionals, but the style is more formal than modern/energetic for a tech‑education brand."
+    },
+    {
+      "theme_id": "tech-violet",
+      "score": 9,
+      "reason": "Blue‑violet gradient directly aligns with the requested blues/purples, feels modern and energetic, and its education/startup keywords match a technology training institute for both professionals and students."
+    },
+    {
+      "theme_id": "midnight-dark",
+      "score": 5,
+      "reason": "Dark, bold aesthetic is modern and futuristic, but the high‑contrast dark mode reduces perceived trustworthiness for a broad audience and does not emphasize the preferred blue/purple palette."
+    },
+    {
+      "theme_id": "warm-earthy",
+      "score": 2,
+      "reason": "Warm, natural colours conflict with the client’s blue/purple preference and the vibe feels more suited to food or craft businesses, not tech education."
+    },
+    {
+      "theme_id": "fresh-green",
+      "score": 3,
+      "reason": "Green palette does not meet the blue/purple requirement; while calm and trustworthy, it lacks the energetic, modern feel needed for a generative‑AI academy."
+    },
+    {
+      "theme_id": "playful-bright",
+      "score": 2,
+      "reason": "Relies on bright, often pink tones which the client wants to avoid, and its playful tone is mismatched with the professional, trustworthy image required."
+    },
+    {
+      "theme_id": "minimal-mono",
+      "score": 5,
+      "reason": "Minimal black‑white design is modern and can feel trustworthy, but it does not incorporate the requested blue or purple colours, reducing relevance for the client’s visual preference."
+    }
+  ],
+  "theme_id": "tech-violet",
+  "reasoning": "Tech‑Violet scores the highest because it directly satisfies the colour preference (blue‑violet gradient), aligns with the modern and energetic mood, and its education/startup keywords fit the technology‑education industry and the mixed audience of professionals and students. It balances trustworthiness with a fresh, innovative look, making it the optimal visual theme for Tinitiate AI Academy."
+}

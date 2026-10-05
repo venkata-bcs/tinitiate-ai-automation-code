@@ -1,0 +1,30 @@
+{
+  "section_checks": [
+    "Home: Hero banner with headline, short pitch and \"Explore Courses\" button -> FOUND (heading 'Welcome to Tinitiate AI Academy', page text includes 'Explore Courses' link to /courses)",
+    "Home: Three highlights: Hands-on Labs, Industry Mentors, Placement Support -> FOUND (headings 'Hands‑on Labs', 'Industry Mentors', 'Placement Support')",
+    "Home: Testimonials from 3 students -> FOUND (testimonials for Riya Sharma, Amit Patel, Sneha Rao under heading 'What Our Students Say')",
+    "Courses: Course cards: GenAI Foundations, AI Agents with CrewAI & LangGraph, Python Automation, Prompt Engineering -> FOUND (headings include each course name)",
+    "Courses: Each card shows duration, mode (Online / Classroom) and fee in Rs. -> FOUND (text shows mode, 'Duration: X weeks', 'Fee: ₹Y' for each course)",
+    "About Us: Our story, mission and vision -> FOUND (headings 'Our story, mission and vision', sections 'Our Story', 'Mission', 'Vision')",
+    "About Us: Team section with 3 trainers (name, role, one-line bio) -> FOUND (trainers Dr. Ananya Rao, Rohit Verma, Sneha Patel with role and bio listed)",
+    "Contact Us: Short intro text inviting visitors to ask about courses -> FOUND (page text starts with 'Have questions about our AI courses or want to learn more?')",
+    "Contact Us: Form field Full Name (required) -> FOUND (form field text_input 'Full Name *')",
+    "Contact Us: Form field Email (required) -> FOUND (form field text_input 'Email *')",
+    "Contact Us: Form field Phone (optional) -> FOUND (form field text_input 'Phone')",
+    "Contact Us: Form field Course Interested In (dropdown with the course names, required) -> FOUND (selectbox with options ['GenAI Foundations', 'AI Agents with CrewAI & LangGraph', 'Python Automation', 'Prompt Engineering'])",
+    "Contact Us: Form field Message (required, multi-line) -> FOUND (text_area 'Message *')",
+    "Contact Us: Show a thank-you message after submitting -> FOUND (contact test confirms thank-you message 'Thank you for contacting us. We will respond shortly.')",
+    "Contact Us: Submitted data is saved to data/contacts.csv -> FOUND (contact test confirms CSV entry)",
+    "Header: Logo text: Tinititate AI Academy -> FOUND (header text includes 'Tinititate AI Academy')",
+    "Header: Navigation links to all pages -> FOUND (links Home, Courses, About Us, Contact Us present)",
+    "Header: Highlighted \"Enroll Now\" button that goes to Contact Us -> FOUND (link 'Enroll Now' -> /contact)",
+    "Footer: Copyright line: (c) Tinititate AI Academy -> FOUND (footer text includes '(c) Tinititate AI Academy')",
+    "Footer: Quick links to all pages -> FOUND (quick links list Home, Courses, About Us, Contact Us)",
+    "Footer: Address: Hyderabad, Telangana, India -> FOUND (footer includes '- Hyderabad, Telangana, India')",
+    "Footer: Email: info@tinititate.example -> FOUND (footer includes '- info@tinititate.example')",
+    "Footer: Social: LinkedIn, YouTube, GitHub -> FOUND (footer lists LinkedIn, YouTube, GitHub)"
+  ],
+  "passed": true,
+  "issues": [],
+  "fix_instructions": ""
+}

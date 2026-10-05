@@ -1,0 +1,145 @@
+{
+  "site_name": "Tinitiate AI Academy",
+  "description": "A training institute that teaches Generative AI, AI Agents and Automation to working professionals and students in India.",
+  "pages": [
+    {
+      "name": "Home",
+      "component": "Home",
+      "route": "/",
+      "purpose": "Landing page introducing the academy and highlighting key features.",
+      "sections": [
+        "Hero banner with a headline, a short pitch and a \"Explore Courses\" button",
+        "Three highlights: Hands-on Labs, Industry Mentors, Placement Support",
+        "Testimonials from 3 students"
+      ]
+    },
+    {
+      "name": "Courses",
+      "component": "Courses",
+      "route": "/courses",
+      "purpose": "List of courses offered with details.",
+      "sections": [
+        "Course cards: GenAI Foundations, AI Agents with CrewAI & LangGraph, Python Automation, Prompt Engineering",
+        "Each card shows duration, mode (Online / Classroom) and fee in Rs."
+      ]
+    },
+    {
+      "name": "About Us",
+      "component": "AboutUs",
+      "route": "/about-us",
+      "purpose": "Information about the academy, its mission, vision, and team.",
+      "sections": [
+        "Our story, mission and vision",
+        "Team section with 3 trainers (name, role, one-line bio)"
+      ]
+    }
+  ],
+  "header": {
+    "logo_text": "Tinitiate AI Academy",
+    "nav": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Courses",
+        "route": "/courses"
+      },
+      {
+        "label": "About Us",
+        "route": "/about-us"
+      },
+      {
+        "label": "Contact Us",
+        "route": "/contact"
+      }
+    ],
+    "cta_label": "Enroll Now",
+    "cta_route": "/contact"
+  },
+  "footer": {
+    "copyright": "(c) Tinitiate AI Academy",
+    "links": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Courses",
+        "route": "/courses"
+      },
+      {
+        "label": "About Us",
+        "route": "/about-us"
+      },
+      {
+        "label": "Contact Us",
+        "route": "/contact"
+      }
+    ],
+    "contact_info": [
+      "Hyderabad, Telangana, India",
+      "info@tinitiate.example"
+    ],
+    "social": [
+      "LinkedIn",
+      "YouTube",
+      "GitHub"
+    ]
+  },
+  "contact": {
+    "name": "Contact Us",
+    "route": "/contact",
+    "intro": "Short intro text inviting visitors to ask about courses",
+    "fields": [
+      {
+        "name": "full_name",
+        "label": "Full Name",
+        "type": "text",
+        "required": true,
+        "options": []
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true,
+        "options": []
+      },
+      {
+        "name": "phone",
+        "label": "Phone",
+        "type": "tel",
+        "required": false,
+        "options": []
+      },
+      {
+        "name": "course_interested_in",
+        "label": "Course Interested In",
+        "type": "select",
+        "required": true,
+        "options": [
+          "GenAI Foundations",
+          "AI Agents with CrewAI & LangGraph",
+          "Python Automation",
+          "Prompt Engineering"
+        ]
+      },
+      {
+        "name": "message",
+        "label": "Message",
+        "type": "textarea",
+        "required": true,
+        "options": []
+      }
+    ],
+    "success_message": "Thank you for contacting us. We will respond shortly."
+  },
+  "theme_inputs": {
+    "audience": "Working professionals and college students",
+    "industry": "Technology education",
+    "mood": "Modern, trustworthy, energetic",
+    "color_preference": "Blues or purples, avoid pastel pinks",
+    "other_notes": ""
+  }
+}
