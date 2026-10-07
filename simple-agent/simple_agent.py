@@ -34,15 +34,10 @@ if hasattr(sys.stdout, "reconfigure"):          # CrewAI logs emojis; Windows co
 
 from crewai import LLM, Agent, Crew, Process, Task  # noqa: E402
 
-# Workaround: CrewAI adds a "cache_breakpoint" key to messages that Groq (via LiteLLM) rejects
-_format_messages = LLM._format_messages_for_provider
-LLM._format_messages_for_provider = lambda self, messages: _format_messages(
-    self, [{k: v for k, v in m.items() if k != "cache_breakpoint"} for m in messages or []])
-
 HERE = Path(__file__).resolve().parent
 SETTINGS_FILE = HERE.parent / "settings.config"
 OUTPUT_DIR = HERE / "output"
-GROQ_MODEL = "groq/openai/gpt-oss-120b"
+OPENROUTER_MODEL = "openrouter/openai/gpt-oss-120b"
 IMAGE_API = "https://ai.api.nvidia.com/v1/genai/black-forest-labs/flux.1-dev"
 
 
@@ -185,11 +180,10 @@ def main():
     args = parser.parse_args()
 
     settings = load_settings()
-    if not settings.get("GROQ_API_KEY"):
-        sys.exit(f"GROQ_API_KEY not found in {SETTINGS_FILE}")
-    os.environ["GROQ_API_KEY"] = settings["GROQ_API_KEY"]
-    # num_retries: LiteLLM waits and retries when Groq's free plan rate-limits us
-    llm = LLM(model=GROQ_MODEL, api_key=settings["GROQ_API_KEY"], temperature=0.4, num_retries=5)
+    if not settings.get("OPENROUTER_API_KEY"):
+        sys.exit(f"OPENROUTER_API_KEY not found in {SETTINGS_FILE}")
+    os.environ["OPENROUTER_API_KEY"] = settings["OPENROUTER_API_KEY"]
+    llm = LLM(model=OPENROUTER_MODEL, api_key=settings["OPENROUTER_API_KEY"], temperature=0.4)
 
     START = time.time()
     print(f"Subject: {args.subject}\nAgent 1 is choosing a topic ...", flush=True)

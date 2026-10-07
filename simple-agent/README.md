@@ -73,7 +73,7 @@ pip install -r requirements.txt
 Keys are read from `../settings.config`:
 
 ```
-GROQ_API_KEY=gsk_...        # required - the LLM for all 4 agents
+OPENROUTER_API_KEY=sk-or-... # required - the LLM for all 4 agents
 NVDIA_API_KEY=nvapi-...     # optional - only for the cover image
 ```
 

@@ -2,7 +2,7 @@
 # Format: "Key: value". The description may continue on the following lines.
 # Image Size: WIDTHxHEIGHT, each between 768 and 1344 (rounded to a multiple of 64)
 
-Image Type: Anime Image
+Image Type: realistic
 Image Size: 1344x768
 Image Description:
-    People in a fair
+    People in a train
